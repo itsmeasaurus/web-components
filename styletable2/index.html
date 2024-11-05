@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="table.js"></script>
+</head>
+<body>
+    <dynamic-table id="users-table"></dynamic-table>
+    <script>
+        const userData = [
+            { "Name": "Alice", "Age": 30, "Country": "USA" },
+            { "Name": "Bob", "Age": 25, "Country": "Canada" },
+            { "Name": "Senora", "Age": 5, "Country": "Italy" }
+        ];
+        const table = document.getElementById('users-table');
+        table.data = userData;
+    </script>
+</body>
+</html>
